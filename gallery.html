@@ -2,13 +2,15 @@
 <html lang="en">
 
 <head>
-  <meta charset="UTF-8" />
-  <title>Knowing Cuba – Gallery & Media</title>
-  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <meta charset="UTF-8">
+  <title>Knowing Cuba – Gallery &amp; Media</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
   <link
     href="https://fonts.googleapis.com/css2?family=Montserrat:wght@500;700&family=Source+Serif+Pro:wght@400;500&display=swap"
-    rel="stylesheet" />
-  <link rel="stylesheet" href="styles.css" />
+    rel="stylesheet">
+  <link rel="stylesheet" href="./base.css">
+  <link rel="stylesheet" href="./styles.css">
+
 </head>
 
 <body>
@@ -45,24 +47,48 @@
           </div>
 
           <div class="gallery-grid gallery-page-grid">
-            <!-- 6–12 images (reutiliza tus imágenes o añade más) -->
             <div class="gallery-item">
-              <img src="imagen/beach 2.jpg" Cuban beach" class="lightbox-trigger" />
+              <img src="beach 2.jpg" alt="Cuban beach" class="lightbox-trigger">
+              <p class="photo-source">
+                Photo by <a href="https://www.pexels.com/photo/sandy-beach-and-turquoise-sea-4226155/"
+                  target="_blank">Alleksana</a>
+              </p>
             </div>
             <div class="gallery-item">
-              <img src="imagen/old building.jpg" alt="Old Havana buildings" class="lightbox-trigger" />
+              <img src="old building.jpg" alt="Old Havana buildings" class="lightbox-trigger">
+              <p class="photo-source">
+                Photo by <a
+                  href="https://www.pexels.com/photo/narrow-pedestrian-street-crowded-with-tourists-in-historic-city-5472298/"
+                  target="_blank">Ryutaro Tsukata</a>
+              </p>
             </div>
             <div class="gallery-item">
-              <img src="imagen/vinales.jpg" alt="Viñales Valley" class="lightbox-trigger" />
+              <img src="vinales.jpg" alt="Viñales Valley" class="lightbox-trigger">
+              <p class="photo-source">
+                Photo by <a href="https://www.pexels.com/photo/rural-house-on-hill-against-green-mountains-5472348/"
+                  target="_blank">Ryutaro Tsukata</a>
+              </p>
             </div>
             <div class="gallery-item">
-              <img src="imagen/old car2.jpg" alt="Classic car in Havana" class="lightbox-trigger" />
+              <img src="old car2.jpg" alt="Classic car in Havana" class="lightbox-trigger">
+              <p class="photo-source">
+                Photo by <a href="https://www.pexels.com/photo/several-cars-1637210/" target="_blank">Yuting Gao</a>
+              </p>
             </div>
             <div class="gallery-item">
-              <img src="imagen/music street.jpg" alt="Street musicians" class="lightbox-trigger" />
+              <img src="music street.jpg" alt="Street musicians" class="lightbox-trigger">
+              <p class="photo-source">
+                Photo by <a href="https://www.pexels.com/photo/three-men-playing-musical-instruments-1845844/"
+                  target="_blank">Dimitri Dim</a>
+              </p>
             </div>
             <div class="gallery-item">
-              <img src="imagen/capitolio.jpg" alt="Capitolio Havana" class="lightbox-trigger" />
+              <img src="capitolio.jpg" alt="Capitolio Havana" class="lightbox-trigger">
+              <p class="photo-source">
+                Photo by <a
+                  href="https://www.pexels.com/photo/entrance-to-national-capitol-building-in-havana-cuba-6306936/"
+                  target="_blank">Clive Kim</a>
+              </p>
             </div>
           </div>
 
@@ -90,12 +116,11 @@
 
   <div class="lightbox">
     <div class="lightbox-inner">
-      <img src="" alt="" class="lightbox-image" />
+      <img src="#" alt="Expanded image" class="lightbox-image">
     </div>
-    <button class="lightbox-close" aria-label="Close image">✕</button>
+    <button type="button" class="lightbox-close" aria-label="Close image">✕</button>
   </div>
-
-  <script src="script.js"></script>
+  <script defer src="./script.js"></script>
 </body>
 
 </html>

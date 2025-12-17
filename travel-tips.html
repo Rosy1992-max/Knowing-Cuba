@@ -1,176 +1,200 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
-  <meta charset="UTF-8" />
+  <meta charset="UTF-8">
   <title>Knowing Cuba – Travel Tips</title>
-  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <meta name="viewport" content="width=device-width, initial-scale=1">
   <link
     href="https://fonts.googleapis.com/css2?family=Montserrat:wght@500;700&family=Source+Serif+Pro:wght@400;500&display=swap"
-    rel="stylesheet"
-  />
-  <link rel="stylesheet" href="styles.css" />
+    rel="stylesheet">
+  <link rel="stylesheet" href="./base.css">
+  <link rel="stylesheet" href="./styles.css">
+
 </head>
+
 <body>
-<div class="wrapper">
-  <header class="site-header">
-    <div class="container">
-      <nav class="nav">
-        <div class="nav-logo">
-          <span class="nav-logo-mark"></span>
-          Knowing Cuba
-        </div>
-        <div class="nav-links">
-          <a href="index.html">Home</a>
-          <a href="places.html">Places</a>
-          <a href="travel-tips.html" class="active">Travel Tips</a>
-          <a href="gallery.html">Gallery</a>
-          <a href="about.html">About</a>
-          <a href="about.html" class="nav-cta">Contact</a>
-        </div>
-      </nav>
-    </div>
-  </header>
+  <div class="wrapper">
+    <header class="site-header">
+      <div class="container">
+        <nav class="nav">
+          <div class="nav-logo">
+            <span class="nav-logo-mark"></span>
+            Knowing Cuba
+          </div>
+          <div class="nav-links">
+            <a href="index.html">Home</a>
+            <a href="places.html">Places</a>
+            <a href="travel-tips.html" class="active">Travel Tips</a>
+            <a href="gallery.html">Gallery</a>
+            <a href="about.html">About</a>
+            <a href="about.html" class="nav-cta">Contact</a>
+          </div>
+        </nav>
+      </div>
+    </header>
 
-  <main>
-    <section class="section">
-      <div class="container two-column">
-        <div>
-          <div class="section-kicker">Travel Tips</div>
-          <h1 class="section-title">Basics before you go</h1>
-          <p class="section-intro">
-            Learn about currency, weather, and the best times of year to visit Cuba, so
-            you can plan your trip with realistic expectations and less stress.
-          </p>
+    <main>
+      <section class="section">
+        <div class="container two-column">
 
-          <div class="tip-list">
-            <article class="tip-card">
-              <h2 class="tip-title">Currency basics</h2>
+          <!-- COLUMN 1 -->
+          <div>
+            <div class="section-kicker">Travel Tips</div>
+            <h1 class="section-title">Basics before you go</h1>
+            <p class="section-intro">
+              Learn about currency, weather, and the best times to visit Cuba so you can
+              plan your trip with realistic expectations and less stress.
+            </p>
+
+            <!-- Currency -->
+            <div class="tip-card">
+              <div class="tip-icon">💱</div>
+              <h3 class="tip-title">Currency basics</h3>
               <p>
-                Cuba’s currency system can change, so always check the most updated
-                information before you travel. In general, bring a mix of cash and
-                be ready for limited card use in some areas. It’s a good idea to keep
-                small bills for taxis, tips, and local snacks.
+                Cuba’s currency rules can change, so always check the most updated
+                information. Cash is essential in many areas, and small bills are useful
+                for taxis, tips, and snacks.
               </p>
-            </article>
+              <a href="#" class="tip-btn" data-tip="currency">Learn More →</a>
+            </div>
 
-            <article class="tip-card">
-              <h2 class="tip-title">Weather &amp; best months</h2>
+            <!-- Weather -->
+            <div class="tip-card">
+              <div class="tip-icon">🌤️</div>
+              <h3 class="tip-title">Weather &amp; best months</h3>
               <p>
-                Cuba is tropical, with warm temperatures most of the year. The drier
-                season usually runs from November to April, which many travelers
-                consider the most comfortable time to visit. Summer months can be
-                hotter and more humid, with a higher chance of rain.
+                Cuba is tropical year-round. The best travel season is November to April.
+                Summer months bring heat, humidity, and higher chances of rain.
               </p>
-            </article>
+              <a href="#" class="tip-btn" data-tip="weather">Learn More →</a>
+            </div>
+          </div>
+
+          <!-- COLUMN 2 -->
+          <div>
+
+            <!-- Taxis -->
+            <div class="tip-card">
+              <div class="tip-icon">🚕</div>
+              <h3 class="tip-title">Taxis &amp; classic cars</h3>
+              <p>
+                Classic American cars are iconic. Always confirm the fare before riding
+                and check whether it's per car or per person.
+              </p>
+              <a class="tip-btn" href="#" data-tip="taxis">Learn More →</a>
+            </div>
+
+            <!-- Buses -->
+            <div class="tip-card">
+              <div class="tip-icon">🚌</div>
+              <h3 class="tip-title">Buses &amp; long-distance travel</h3>
+              <p>
+                Tourist buses like Viazul connect major cities. Routes can sell out, so
+                booking in advance is recommended.
+              </p>
+              <a class="tip-btn" href="#" data-tip="buses">Learn More →</a>
+            </div>
+
+            <!-- Local transport -->
+            <div class="tip-card">
+              <div class="tip-icon">🚶</div>
+              <h3 class="tip-title">Local transport</h3>
+              <p>
+                Shared taxis, moto-taxis, and local buses offer authentic experiences,
+                though schedules may be irregular.
+              </p>
+              <a class="tip-btn" href="#" data-tip="local">Learn More →</a>
+            </div>
+
           </div>
         </div>
+      </section>
 
-        <div>
+
+      <!-- SAFETY & ETIQUETTE -->
+      <section class="section">
+        <div class="container">
           <div class="section-header">
-            <h2 class="section-title">Transportation tips</h2>
+            <div class="section-kicker">Respect &amp; safety</div>
+            <h2 class="section-title">Safety &amp; etiquette tips</h2>
             <p class="section-intro">
-              Moving around Cuba: taxis, classic cars, buses, and local options.
-              Transport can feel different from other countries, but it’s part of the
-              experience.
+              Stay safe and respect local culture with these quick tips. Small details
+              make a big difference in how your trip feels — and how locals experience visitors.
             </p>
           </div>
 
-          <div class="tip-list">
-            <article class="tip-card">
-              <h3 class="tip-title">Taxis &amp; classic cars</h3>
-              <p>
-                Classic American cars are one of Cuba’s symbols. You can use them
-                as taxis in many cities. Always ask the price before starting the ride
-                and confirm if it’s per person or for the whole car.
-              </p>
-            </article>
-
-            <article class="tip-card">
-              <h3 class="tip-title">Buses &amp; long-distance travel</h3>
-              <p>
-                Some routes between cities are served by tourist buses. If you plan
-                to move between places such as Havana, Viñales, and Varadero, try
-                to check the schedule in advance and book when possible.
-              </p>
-            </article>
-
-            <article class="tip-card">
-              <h3 class="tip-title">Local transport</h3>
-              <p>
-                In some areas, you may see shared taxis or local buses that are more
-                basic but very authentic. If you use these, be patient and open to a
-                slower rhythm.
-              </p>
-            </article>
-          </div>
-        </div>
-      </div>
-    </section>
-
-    <!-- SAFETY & ETIQUETTE -->
-    <section class="section">
-      <div class="container">
-        <div class="section-header">
-          <div class="section-kicker">Respect &amp; Safety</div>
-          <h2 class="section-title">Safety &amp; etiquette tips</h2>
-          <p class="section-intro">
-            Stay safe and respect local culture with these quick tips. Small details
-            make a big difference in how your trip feels — and how locals experience
-            visitors.
-          </p>
-        </div>
-
-        <div class="tip-list">
-          <article class="tip-card">
+          <!-- Basic safety -->
+          <div class="tip-card">
             <h3 class="tip-title">Basic safety</h3>
             <p>
               As in any destination, keep an eye on your belongings, especially in
               crowded areas. Use hotel safes when possible and avoid carrying all
               important documents with you at once.
             </p>
-          </article>
+            <a href="#" class="tip-btn" data-tip="safety-basic">Learn More →</a>
+          </div>
 
-          <article class="tip-card">
+          <!-- Respectful behavior -->
+          <div class="tip-card">
             <h3 class="tip-title">Respectful behavior</h3>
             <p>
               Cubans are generally warm and welcoming. A friendly greeting, basic
               Spanish phrases, and patience go a long way. Be respectful when taking
               photos of people — when possible, ask first.
             </p>
-          </article>
+            <a href="#" class="tip-btn" data-tip="safety-respect">Learn More →</a>
+          </div>
 
-          <article class="tip-card">
+          <!-- Local rhythm -->
+          <div class="tip-card">
             <h3 class="tip-title">Local rhythm</h3>
             <p>
-              Things may move slower than you’re used to, and plans can change.
-              Try to keep a flexible mindset. This will reduce stress and help you
-              appreciate the human side of daily life in Cuba.
+              Things may move slower than you’re used to, and plans can change. Try to
+              keep a flexible mindset. This will reduce stress and help you appreciate
+              the human side of daily life in Cuba.
             </p>
-          </article>
+            <a href="#" class="tip-btn" data-tip="safety-rhythm">Learn More →</a>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <footer class="site-footer">
+      <div class="container footer-inner">
+        <div>© Knowing Cuba – Travel Tips.</div>
+        <div class="footer-links">
+          <a href="index.html">Home</a>
+          <a href="gallery.html">Gallery</a>
+          <a href="about.html">Contact</a>
         </div>
       </div>
-    </section>
-  </main>
+    </footer>
+  </div>
 
-  <footer class="site-footer">
-    <div class="container footer-inner">
-      <div>© Knowing Cuba – Travel Tips.</div>
-      <div class="footer-links">
-        <a href="index.html">Home</a>
-        <a href="gallery.html">Gallery</a>
-        <a href="about.html">Contact</a>
+  <div class="lightbox">
+    <div class="lightbox-inner">
+      <img src="#" alt="Expanded image" class="lightbox-image">
+    </div>
+    <button type="button" class="lightbox-close" aria-label="Close image">✕</button>
+  </div>
+
+  <!-- Travel Tips Modal -->
+  <div id="tip-modal" class="tip-modal" hidden>
+    <div class="tip-modal-backdrop"></div>
+
+    <div class="tip-modal-inner" role="dialog" aria-modal="true" aria-labelledby="tip-modal-title">
+
+      <button class="tip-modal-close" type="button" aria-label="Close">×</button>
+
+      <div id="tip-modal-content">
+        <!-- Dynamic content will be inserted here -->
       </div>
     </div>
-  </footer>
-</div>
-
-<div class="lightbox">
-  <div class="lightbox-inner">
-    <img src="" alt="" class="lightbox-image" />
   </div>
-  <button class="lightbox-close" aria-label="Close image">✕</button>
-</div>
 
-<script src="script.js"></script>
+  <script defer src="./script.js"></script>
+
 </body>
+
 </html>
