@@ -1,0 +1,54 @@
+/* ===== Base / Reset ligero (Knowing Cuba) ===== */
+*,
+*::before,
+*::after { box-sizing: border-box; }
+
+html {
+  font-size: 16px; /* base para rem */
+  scroll-behavior: smooth;
+}
+
+body {
+  margin: 0;
+  min-height: 100vh;
+  font-family: var(--font-body, system-ui, -apple-system, Segoe UI, Roboto, Arial, sans-serif);
+  line-height: 1.5;
+  color: var(--color-text, #111);
+  background: var(--color-bg, #fff);
+  text-rendering: optimizeLegibility;
+  -webkit-font-smoothing: antialiased;
+}
+
+/* Imágenes responsive: no se salen del contenedor */
+img, picture, video, canvas, svg {
+  display: block;
+  max-width: 100%;
+  height: auto;
+}
+
+/* Formularios heredan tipografía */
+input, button, textarea, select { font: inherit; }
+
+/* Links base (a, a:hover, a:visited) */
+a { color: var(--color-link, #0b5fff); text-decoration: underline; }
+a:hover { text-decoration: none; }
+a:visited { color: var(--link-visited, #6a3df0); }
+a:focus-visible { outline: 3px solid var(--color-accent, #ffbf47); outline-offset: 3px; }
+
+/* Headings base */
+h1, h2, h3, h4 {
+  font-family: var(--font-heading, var(--font-body, system-ui));
+  line-height: 1.15;
+  margin: 0 0 0.6rem 0;
+}
+
+p { margin: 0 0 1rem 0; }
+ul, ol { margin: 0 0 1rem 1.25rem; }
+
+/* Responsive base font sizing (opcional pero recomendado) */
+@media (max-width: 600px){
+  html { font-size: 15px; }
+}
+@media (min-width: 1100px){
+  html { font-size: 17px; }
+}

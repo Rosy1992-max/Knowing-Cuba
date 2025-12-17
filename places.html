@@ -1,40 +1,44 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
-  <meta charset="UTF-8" />
+  <meta charset="UTF-8">
   <title>Knowing Cuba – Places to Visit</title>
-  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <meta name="viewport" content="width=device-width, initial-scale=1">
   <link
     href="https://fonts.googleapis.com/css2?family=Montserrat:wght@500;700&family=Source+Serif+Pro:wght@400;500&display=swap"
-    rel="stylesheet"
-  />
-  <link rel="stylesheet" href="styles.css" />
-</head>
-<body>
-<div class="wrapper">
-  <header class="site-header">
-    <div class="container">
-      <nav class="nav">
-        <div class="nav-logo">
-          <span class="nav-logo-mark"></span>
-          Knowing Cuba
-        </div>
-        <div class="nav-links">
-          <a href="index.html">Home</a>
-          <a href="places.html" class="active">Places</a>
-          <a href="travel-tips.html">Travel Tips</a>
-          <a href="gallery.html">Gallery</a>
-          <a href="about.html">About</a>
-          <a href="about.html" class="nav-cta">Contact</a>
-        </div>
-      </nav>
-    </div>
-  </header>
+    rel="stylesheet">
+  <link rel="stylesheet" href="./base.css">
+  <link rel="stylesheet" href="./styles.css">
 
-  <main>
-    <section class="section">
-      <div class="container two-column">
-        <div>
+</head>
+
+<body>
+  <div class="wrapper">
+    <header class="site-header">
+      <div class="container">
+        <nav class="nav">
+          <div class="nav-logo">
+            <span class="nav-logo-mark"></span>
+            Knowing Cuba
+          </div>
+          <div class="nav-links">
+            <a href="index.html">Home</a>
+            <a href="places.html" class="active">Places</a>
+            <a href="travel-tips.html">Travel Tips</a>
+            <a href="gallery.html">Gallery</a>
+            <a href="about.html">About</a>
+            <a href="about.html" class="nav-cta">Contact</a>
+          </div>
+        </nav>
+      </div>
+    </header>
+
+    <main>
+      <section class="section">
+        <div class="container">
+
+          <!-- ENCABEZADO GENERAL -->
           <div class="section-kicker">Places to Visit</div>
           <h1 class="section-title">Cities, beaches, and landmarks to explore</h1>
           <p class="section-intro">
@@ -46,81 +50,144 @@
             🧭 Top recommendation: Start with Havana, then explore beyond.
           </div>
 
-          <div class="place-list">
-            <article class="place-card">
-              <h2 class="place-name">Havana (La Habana)</h2>
-              <div class="place-meta">History • Architecture • Music</div>
-              <p>
-                Walk through Old Havana’s colorful streets, visit plazas, and see
-                classic cars driving along the Malecón. Don’t miss the Capitolio,
-                Plaza Vieja, and small local cafés playing live music.
-              </p>
-            </article>
+          <div class="two-column">
 
-            <article class="place-card">
-              <h2 class="place-name">Santiago de Cuba</h2>
-              <div class="place-meta">Music • Afro-Cuban culture • Festivals</div>
-              <p>
-                Located in eastern Cuba, Santiago is known as the “cradle of the
-                Revolution” and the heart of many Cuban music styles. Expect
-                strong cultural energy, historic sites, and beautiful views of the bay.
-              </p>
-            </article>
+            <!-- Left Column: City -->
+            <div>
+              <div class="place-list">
 
-            <article class="place-card">
-              <h2 class="place-name">Varadero</h2>
-              <div class="place-meta">Beaches • Resorts • Relaxation</div>
-              <p>
-                Varadero is one of Cuba’s most famous beach destinations, with
-                long stretches of white sand and clear turquoise water. It’s ideal
-                for swimming, relaxing, and simple day trips from Havana.
-              </p>
-            </article>
-          </div>
-        </div>
+                <!-- Havana -->
+                <div class="place-card">
+                  <div class="place-name">Havana (La Habana)</div>
+                  <div class="place-meta">History • Architecture • Music</div>
+                  <p>
+                    Walk through Old Havana’s colorful streets, visit plazas, and see classic
+                    cars driving along the Malecón. Don’t miss the Capitolio, Plaza Vieja, and
+                    small local cafés playing live music.
+                  </p>
+                  <a class="place-video-btn" href="https://www.youtube.com/watch?v=N4ZMYokojGw" target="_blank"
+                    rel="noopener noreferrer">
+                    ▶ Watch Video
+                  </a>
+                </div>
 
-        <div>
-          <div class="section-header">
-            <h2 class="section-title">Beaches &amp; nature spots</h2>
-            <p class="section-intro">
-              Discover Cuba’s most beautiful natural landscapes and crystal-clear
-              beaches, from valleys and mountains to quiet coastal towns.
-            </p>
-          </div>
+                <!-- Santiago -->
+                <div class="place-card">
+                  <div class="place-name">Santiago de Cuba</div>
+                  <div class="place-meta">Music • Afro-Cuban culture • Festivals</div>
+                  <p>
+                    Located in eastern Cuba, Santiago is known as the “cradle of the
+                    Revolution” and the heart of many Cuban music styles. Expect
+                    strong cultural energy, historic sites, and beautiful views of the bay.
+                  </p>
+                  <a class="place-video-btn" href="https://www.youtube.com/watch?v=0mTzoPzo3yQ" target="_blank"
+                    rel="noopener noreferrer">
+                    ▶ Watch Video
+                  </a>
+                </div>
 
-          <div class="place-list">
-            <article class="place-card">
-              <h3 class="place-name">Varadero Beach</h3>
-              <div class="place-meta">Blue water • Soft sand • Easy access</div>
-              <p>
-                A classic Caribbean postcard view. Great for first-time visitors
-                who want a relaxing beach day with simple tourist services.
-              </p>
-            </article>
+                <!-- Trinidad -->
+                <div class="place-card">
+                  <div class="place-name">Trinidad</div>
+                  <div class="place-meta">Colonial architecture • Culture • Beaches nearby</div>
+                  <p>
+                    A UNESCO World Heritage site frozen in time, Trinidad features colorful colonial buildings,
+                    cobblestone streets, and a laid-back atmosphere. It's perfect for experiencing authentic
+                    Cuban culture away from the tourist crowds.
+                  </p>
+                  <a class="place-video-btn" href="https://www.youtube.com/watch?v=HdRv2l8BIP4" target="_blank"
+                    rel="noopener noreferrer">
+                    ▶ Watch Video
+                  </a>
+                </div>
 
-            <article class="place-card">
-              <h3 class="place-name">Viñales Valley</h3>
-              <div class="place-meta">Nature • Tobacco farms • Hiking</div>
-              <p>
-                Known for its green mountains and farms, Viñales offers a calm,
-                rural side of Cuba. You can see tobacco fields, caves, and
-                panoramic viewpoints.
-              </p>
-            </article>
+                <!-- Matanzas (city) -->
+                <div class="place-card">
+                  <div class="place-name">Matanzas</div>
+                  <div class="place-meta">Culture • History • Nature</div>
+                  <p>
+                    Known as the “City of Bridges” and often called the cultural heart of Cuba,
+                    Matanzas blends scenic coastal views with vibrant Afro-Cuban traditions.
+                    Visitors can explore historic architecture, riverside promenades, and nearby
+                    natural wonders like Bellamar Caves and the Yumurí Valley. A peaceful and
+                    authentic destination for travelers who enjoy history, nature, and local culture.
+                  </p>
+                  <a class="place-video-btn" href="https://www.youtube.com/watch?v=pUGZfVkzpPU" target="_blank"
+                    rel="noopener noreferrer">
+                    ▶ Watch Video
+                  </a>
+                </div>
 
-            <article class="place-card">
-              <h3 class="place-name">Cayo Santa María &amp; other keys</h3>
-              <div class="place-meta">Island escapes • All-inclusive resorts</div>
-              <p>
-                Small islands (known as “cayos”) connected by causeways offer
-                quiet beaches and clear water, perfect if you want a more
-                secluded experience.
-              </p>
-            </article>
-          </div>
-        </div>
-      </div>
-    </section>
+              </div>
+            </div>
+
+
+            <!-- Right Column: beach and nature -->
+            <div>
+
+              <div class="section-header">
+                <h2 class="section-title">Beaches &amp; nature spots</h2>
+                <p class="section-intro">
+                  Discover Cuba’s most beautiful natural landscapes and crystal-clear
+                  beaches, from valleys and mountains to quiet coastal towns.
+                </p>
+              </div>
+
+              <div class="place-list">
+
+                <!-- Varadero Beach -->
+                <div class="place-card">
+                  <div class="place-name">Varadero Beach</div>
+                  <div class="place-meta">Blue water • Soft sand • Easy access</div>
+                  <p>
+                    A classic Caribbean postcard view. Great for first-time visitors
+                    who want a relaxing beach day with simple tourist services.
+                  </p>
+                  <a class="place-video-btn" href="https://www.youtube.com/watch?v=ScI6A1pO1zo" target="_blank"
+                    rel="noopener noreferrer">
+                    ▶ Watch Video
+                  </a>
+                </div>
+
+                <!-- Viñales Valley -->
+                <div class="place-card">
+                  <div class="place-name">Viñales Valley</div>
+                  <div class="place-meta">Nature • Tobacco farms • Hiking</div>
+                  <p>
+                    Known for its green mountains and farms, Viñales offers a calm,
+                    rural side of Cuba. You can see tobacco fields, caves, and
+                    panoramic viewpoints.
+                  </p>
+                  <a class="place-video-btn" href="https://www.youtube.com/watch?v=OTkcWxSULzw" target="_blank"
+                    rel="noopener noreferrer">
+                    ▶ Watch Video
+                  </a>
+                </div>
+
+                <!-- Cayo Santa María -->
+                <div class="place-card">
+                  <div class="place-name">Cayo Santa María &amp; other keys</div>
+                  <div class="place-meta">Island escapes • All-inclusive resorts</div>
+                  <p>
+                    Small islands (known as “cayos”) connected by causeways offer
+                    quiet beaches and clear water, perfect if you want a more
+                    secluded experience.
+                  </p>
+                  <a class="place-video-btn" href="https://www.youtube.com/watch?v=pAEl8qrnADo" target="_blank"
+                    rel="noopener noreferrer">
+                    ▶ Watch Video
+                  </a>
+                </div>
+
+              </div> <!-- .place-list -->
+            </div> <!-- fin columna derecha -->
+
+          </div> <!-- .two-column -->
+
+        </div> <!-- .container -->
+      </section>
+    </main>
+
 
     <!-- CULTURAL LANDMARKS -->
     <section class="section">
@@ -142,6 +209,11 @@
               Located in Havana, this museum is inside the former presidential
               palace and focuses on Cuba’s revolutionary history.
             </p>
+            <a class="place-video-btn" href="https://www.youtube.com/watch?v=BpxMgb6w8Mg" target="_blank"
+              rel="noopener noreferrer">
+              ▶ Watch Video
+            </a>
+
           </article>
 
           <article class="feature-card">
@@ -151,6 +223,11 @@
               A restored colonial square in Old Havana, surrounded by colorful
               buildings, cafés, and galleries. Perfect for photos and people-watching.
             </p>
+            <a class="place-video-btn" href="https://www.youtube.com/watch?v=vgFmKnuXKO0" target="_blank"
+              rel="noopener noreferrer">
+              ▶ Watch Video
+            </a>
+
           </article>
 
           <article class="feature-card">
@@ -160,31 +237,36 @@
               A historic fortress at the entrance of Havana Bay. Offers impressive
               views of the city and the sea, especially at sunset.
             </p>
+            <a class="place-video-btn" href="https://www.youtube.com/watch?v=y9gSJ2VFgsc" target="_blank"
+              rel="noopener noreferrer">
+              ▶ Watch Video
+            </a>
+
           </article>
         </div>
       </div>
     </section>
-  </main>
-
-  <footer class="site-footer">
-    <div class="container footer-inner">
-      <div>© Knowing Cuba – Places to Visit.</div>
-      <div class="footer-links">
-        <a href="index.html">Home</a>
-        <a href="gallery.html">Gallery</a>
-        <a href="about.html">Contact</a>
+    <footer class="site-footer">
+      <div class="container footer-inner">
+        <div>© Knowing Cuba – Places to Visit.</div>
+        <div class="footer-links">
+          <a href="index.html">Home</a>
+          <a href="gallery.html">Gallery</a>
+          <a href="about.html">Contact</a>
+        </div>
       </div>
-    </div>
-  </footer>
-</div>
-
-<div class="lightbox">
-  <div class="lightbox-inner">
-    <img src="" alt="" class="lightbox-image" />
+    </footer>
   </div>
-  <button class="lightbox-close" aria-label="Close image">✕</button>
-</div>
 
-<script src="script.js"></script>
+  <div class="lightbox">
+    <div class="lightbox-inner">
+      <img src="#" alt="Expanded image" class="lightbox-image">
+    </div>
+    <button type="button" class="lightbox-close" aria-label="Close image">✕</button>
+  </div>
+
+
+  <script defer src="./script.js"></script>
 </body>
+
 </html>

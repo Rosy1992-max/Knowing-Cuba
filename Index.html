@@ -2,13 +2,17 @@
 <html lang="en">
 
 <head>
-  <meta charset="UTF-8" />
+  <meta charset="UTF-8">
   <title>Knowing Cuba – Home</title>
-  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <meta name="viewport" content="width=device-width, initial-scale=1">
   <link
     href="https://fonts.googleapis.com/css2?family=Montserrat:wght@500;700&family=Source+Serif+Pro:wght@400;500&display=swap"
-    rel="stylesheet" />
-  <link rel="stylesheet" href="styles.css" />
+    rel="stylesheet">
+  <link rel="stylesheet" href="./base.css">
+  <link rel="stylesheet" href="./styles.css">
+
+
+
 </head>
 
 <body>
@@ -35,53 +39,80 @@
     <main>
       <!-- HERO -->
       <section class="hero">
-        <div class="container hero-grid">
-          <div>
-            <div class="hero-kicker">Travel + Culture Guide</div>
-            <h1 class="hero-title">
-              Discover the <span class="highlight">beauty, culture, and energy</span> of Cuba.
-            </h1>
-            <p class="hero-text">
-              A vibrant island filled with history, music, and unforgettable experiences.
-              This guide shares top places to visit, travel tips, stunning visuals, and
-              everything you need to begin exploring Cuba with confidence.
-            </p>
+        <div class="container">
+          <div class="hero-grid">
+            <!-- Left columm (text)-->
+            <div>
+              <p class="hero-kicker"> Travelers &amp; Students</p>
+              <h1 class="hero-title">
+                Discover the <span class="highlight">beauty, culture, and energy</span> of Cuba.
+              </h1>
+              <p class="hero-text">
+                A vibrant island filled with history, music, and unforgettable experiences. This guide shares
+                top places to visit, travel tips, stunning visuals, and everything you need to begin exploring Cuba
+                with confidence.
+              </p>
 
-            <div class="hero-meta">
-              <span><strong>18–45</strong> travelers &amp; students</span>
-              <span>English &amp; bilingual friendly</span>
-              <span>Culture • History • Food • Music</span>
-            </div>
-
-            <div class="btn-row">
-              <a href="places.html" class="btn btn-primary">Explore Places</a>
-              <a href="gallery.html" class="btn btn-outline">View Gallery</a>
-            </div>
-          </div>
-
-          <div class="hero-media">
-            <div class="hero-card">
-              <img src="malecon.jpg" alt="Havana street with classic cars" />
-              <div class="hero-chip-row">
-                <div class="hero-chip">Old Havana</div>
-                <div class="hero-chip">Classic Cars</div>
+              <div class="hero-meta">
+                <span><strong>For:</strong> Travelers &amp; students</span>
+                <span><strong>English &amp; bilingual</strong> friendly</span>
               </div>
-              <div class="hero-card-overlay">
-                <div class="hero-tag">Havana, Cuba</div>
-                <div class="hero-location">Malecón at Sunset</div>
-                <div class="hero-caption">
-                  Colorful streets, sea breeze, and the sound of distant music.
+
+
+              <div class="btn-row">
+                <a href="places.html" class="btn btn-primary">Explore Places</a>
+                <a href="gallery.html" class="btn btn-outline">View Gallery</a>
+              </div>
+            </div>
+
+            <!-- Right columm (card+ mini-hero) -->
+            <div class="hero-media">
+              <div class="hero-card">
+                <img src="malecon.jpg" alt="Malecon at Sunset">
+
+                <!-- chips YouTube -->
+                <div class="hero-chip-row">
+                  <a class="hero-chip" href="https://www.youtube.com/watch?v=kkYuOR8K1FU" target="_blank"
+                    rel="noopener noreferrer">
+                    Old Havana
+                  </a>
+
+                  <a class="hero-chip" href="https://www.youtube.com/watch?v=iYaLuWMRj0U" target="_blank"
+                    rel="noopener noreferrer">
+                    Classic Cars
+                  </a>
+                </div>
+
+                <!-- overlay + text + credit -->
+                <div class="hero-card-overlay">
+                  <div class="hero-tag">Havana, Cuba</div>
+                  <div class="hero-location">Malecón at Sunset</div>
+                  <div class="hero-caption">
+                    Colorful streets,sea breeze,
+                  </div>
+                  <div class="hero-caption">
+                    and the sound of distant music.
+                  </div>
+                  <p class="hero-photo-credit">
+                    Photo by
+                    <a href="https://www.pexels.com/photo/vintage-red-car-on-malecon-in-havana-cuba-33210554/"
+                      target="_blank" rel="noopener noreferrer">
+                      Burcu Demirbilek
+                    </a>
+                  </p>
                 </div>
               </div>
-            </div>
 
-            <div class="hero-mini">
-              “Knowing Cuba is a simple, welcoming travel guide designed to introduce
-              visitors to Cuba’s most iconic locations, culture, and experiences.”
+              <!-- mini hero -->
+              <div class="hero-mini">
+                “Knowing Cuba is a simple, welcoming travel guide designed to introduce
+                visitors to Cuba’s most iconic locations, culture, and experiences.”
+              </div>
             </div>
           </div>
         </div>
       </section>
+
 
       <!-- FEATURED LINKS -->
       <section class="section">
@@ -148,25 +179,49 @@
           </div>
 
           <div class="gallery-grid">
-            <!-- Cambia las rutas por tus imágenes reales -->
             <div class="gallery-item">
-              <img src="beach.jpg" alt="Cuban beach with turquoise water" class="lightbox-trigger" />
+              <img src="beach.jpg" alt="Cuban beach with turquoise water" class="lightbox-trigger">
+              <p class="photo-source">
+                Photo by <a href="https://www.pexels.com/photo/brown-hut-533974/ " target="_blank">Pixabay</a>
+              </p>
             </div>
             <div class="gallery-item">
-              <img src="cuba habana.jpg" alt="Old Havana colorful buildings" class="lightbox-trigger" />
+              <img src="cuba habana.jpg" alt="Old Havana colorful buildings" class="lightbox-trigger">
+              <p class="photo-source">
+                Photo by <a href="https://www.pexels.com/photo/white-concrete-building-under-blue-sky-1637122/"
+                  target="_blank">Yuting Gao</a>
+              </p>
             </div>
             <div class="gallery-item">
-              <img src="colonial plaza.jpg" alt="Colonial plaza in Cuba" class="lightbox-trigger" />
+              <img src="colonial plaza.jpg" alt="Colonial plaza in Cuba" class="lightbox-trigger">
+              <p class="photo-source">
+                Photo by <a href=" https://www.pexels.com/photo/beige-concrete-building-3687922/"
+                  target="_blank">Matthias
+                  Oben</a>
+              </p>
             </div>
             <div class="gallery-item">
-              <img src="old car.jpg" alt="old Cars in Havana street" class="lightbox-trigger" />
+              <img src="old car.jpg" alt="old Cars in Havana street" class="lightbox-trigger">
+              <p class="photo-source">
+                Photo by <a href=" https://www.pexels.com/photo/photo-of-car-driving-on-road-3182452/"
+                  target="_blank">Alex
+                  Azabache</a>
+              </p>
             </div>
             <div class="gallery-item">
-              <img src="revolution-museum-in-havana-cuba-also-known-as-museo-de-la-revolucion-BJ7A2J.jpg"
-                alt="Museum revolution" class="lightbox-trigger" />
+              <img src="Morro (2).jpg" alt="Morro" class="lightbox-trigger">
+              <p class="photo-source">
+                Photo by <a
+                  href="https://www.pexels.com/photo/iconic-el-morro-lighthouse-overlooking-havana-bay-31280906/"
+                  target="_blank">Osviel Rodriguez Valdés</a>
+              </p>
             </div>
             <div class="gallery-item">
-              <img src="matanzas.jpg" alt="Matanzas cuba" class="lightbox-trigger" />
+              <img src="matanzas.jpg" alt="Matanzas cuba" class="lightbox-trigger">
+              <p class="photo-source">
+                Photo by <a href="https://www.pexels.com/photo/vibrant-waterfront-scene-in-matanzas-cuba-32938882/ "
+                  target="_blank">Dan Aksel Jacobsen</a>
+              </p>
             </div>
           </div>
         </div>
@@ -185,15 +240,15 @@
     </footer>
   </div>
 
-  <!-- LIGHTBOX OVERLAY (GLOBAL) -->
   <div class="lightbox">
     <div class="lightbox-inner">
-      <img src="" alt="" class="lightbox-image" />
+      <img src="#" alt="Expanded image" class="lightbox-image">
     </div>
-    <button class="lightbox-close" aria-label="Close image">✕</button>
+    <button type="button" class="lightbox-close" aria-label="Close image">✕</button>
   </div>
 
-  <script src="script.js"></script>
+  <script defer src="./script.js"></script>
+
 </body>
 
 </html>
