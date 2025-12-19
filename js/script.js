@@ -34,13 +34,13 @@ document.addEventListener("DOMContentLoaded", () => {
 
 // ===== TRAVEL TIPS MODAL LOGIC =====
 
-// Referencias al modal
+// References to the modal
 const tipModal = document.getElementById("tip-modal");
 const tipModalContent = document.getElementById("tip-modal-content");
 const tipModalClose = document.querySelector(".tip-modal-close");
 const tipModalBackdrop = document.querySelector(".tip-modal-backdrop");
 
-// Contenido detallado para cada tip
+// Detailed content for each tip.
 const tipDetails = {
   currency: {
     title: "More about currency in Cuba",
@@ -96,7 +96,7 @@ const tipDetails = {
     `
   },
 
-  // 🔽 Tus nuevos tips de seguridad
+  // 🔽 New tips security
   "safety-basic": {
     title: "More about basic safety",
     text: `
@@ -133,10 +133,10 @@ const tipDetails = {
       locals, or simply enjoy the atmosphere.
     `
   }
-}; // 👈 importante este punto y coma
+}; // 👈 important
 
 
-// Abrir modal al hacer clic en cualquier .tip-btn
+// open modal when clicking anywhere .tip-btn
 document.querySelectorAll(".tip-btn").forEach(btn => {
   btn.addEventListener("click", (e) => {
     e.preventDefault();
@@ -155,7 +155,7 @@ document.querySelectorAll(".tip-btn").forEach(btn => {
 });
 
 
-// Cerrar modal
+// Close modal
 function closeTipModal() {
   if (!tipModal) return;
   tipModal.classList.remove("active");
@@ -170,7 +170,7 @@ if (tipModalBackdrop) {
   tipModalBackdrop.addEventListener("click", closeTipModal);
 }
 
-// Cerrar con Escape
+// Close escape
 document.addEventListener("keydown", (e) => {
   if (e.key === "Escape" && tipModal && tipModal.classList.contains("active")) {
     closeTipModal();
@@ -178,3 +178,22 @@ document.addEventListener("keydown", (e) => {
 });
 
 // ===== END TRAVEL TIPS MODAL LOGIC =====
+// HERO TABS: chips + botones
+document.addEventListener("DOMContentLoaded", () => {
+  const tabs = document.querySelectorAll(".tab-switch");
+
+  function setActive(view) {
+    tabs.forEach(tab => {
+      tab.classList.toggle("is-active", tab.dataset.view === view);
+    });
+  }
+
+  tabs.forEach(tab => {
+    tab.addEventListener("click", () => {
+      setActive(tab.dataset.view);
+    });
+  });
+
+  // inicial state
+  setActive("places");
+});

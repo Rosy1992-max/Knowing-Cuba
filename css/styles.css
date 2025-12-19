@@ -308,13 +308,24 @@ body {
   font-family: var(--font-body);
   /* same font as tittle */
   text-decoration: none;
-  transition: background 0.2s ease, color 0.2s ease, transform 0.15s ease;
+  transition:background 0.2s ease, color 0.2s ease, transform 0.15s ease;
+}
+
+/* Avoid purple color for visited links in chips.*/
+.hero-chip:visited {
+  color: #f4f4f4;
 }
 
 .hero-chip:hover {
   background: linear-gradient(135deg, var(--color-secondary), var(--color-link));
   color: #ffffff;
   transform: translateY(-1px);
+}
+.hero-chip,
+.hero-chip:link,
+.hero-chip:visited {
+  color: #f4f4f4;
+  text-decoration: none;
 }
 
 /* Floating mini card */
@@ -672,6 +683,7 @@ body {
   text-decoration: none;
   font-size: 0.8rem;
 }
+
 .place-video-btn {
   display: inline-block;
   margin-top: 0.6rem;
@@ -687,6 +699,7 @@ body {
 .place-video-btn:hover {
   background: rgba(67, 127, 199, 0.35);
 }
+
 .tip-card {
   background: radial-gradient(circle at top, rgba(67, 127, 199, 0.16), rgba(10, 26, 47, 0.95));
   border: 1px solid rgba(201, 242, 218, 0.18);
@@ -725,6 +738,7 @@ body {
   text-decoration: underline;
   color: var(--color-secondary);
 }
+
 /* ===== TRAVEL TIPS MODAL ===== */
 
 .tip-modal {
@@ -788,3 +802,21 @@ body {
   margin-bottom: 0.4rem;
 }
 
+/* shared active state (chips + buttons) */
+.tab-switch.is-active {
+  background: linear-gradient(90deg,
+      rgba(240, 120, 60, 0.85),
+      rgba(120, 170, 255, 0.55));
+  border-color: rgba(255, 255, 255, 0.4);
+  color: #fff;
+}
+.btn:hover,
+.hero-chip:hover {
+  transform: translateY(-1px);
+}
+
+.btn:active,
+.hero-chip:active {
+  transform: translateY(0);
+  opacity: 0.95;
+}
